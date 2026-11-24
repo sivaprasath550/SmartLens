@@ -1,0 +1,16 @@
+# Optional: local MongoDB for persistent storage.
+#   docker compose up -d mongo
+# The backend's default MONGODB_URI (mongodb://127.0.0.1:27017/smartlens) matches this.
+# Bound to 127.0.0.1 so the database is not exposed to the local network.
+services:
+  mongo:
+    image: mongo:7
+    container_name: smartlens-mongo
+    ports:
+      - "127.0.0.1:27017:27017"
+    volumes:
+      - smartlens-mongo-data:/data/db
+    restart: unless-stopped
+
+volumes:
+  smartlens-mongo-data:

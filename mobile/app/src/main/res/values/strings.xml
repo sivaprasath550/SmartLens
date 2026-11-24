@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SmartLens</string>
+    <string name="app_tagline">Smart camera · nearby places</string>
+    <string name="settings">Settings</string>
+
+    <!-- Session -->
+    <string name="start_session">Start camera session</string>
+    <string name="stop_session">Stop session</string>
+    <string name="locate_me">Locate</string>
+    <string name="refresh_places">Refresh places</string>
+    <string name="capture_photo">Capture photo</string>
+
+    <!-- Camera -->
+    <string name="camera_off_title">Camera is off</string>
+    <string name="camera_off_body">Start a session to open the live camera preview. Nothing leaves this phone unless you turn on Share live view.</string>
+    <string name="camera_permission_title">Camera permission needed</string>
+    <string name="camera_permission_body">Allow camera access to show the live preview. Location sync still works without it.</string>
+    <string name="camera_error_title">Camera unavailable</string>
+    <string name="camera_starting">Starting camera…</string>
+    <string name="grant_permission">Grant permission</string>
+    <string name="open_app_settings">Open app settings</string>
+    <string name="live">LIVE</string>
+
+    <!-- Status chips -->
+    <string name="chip_camera_off">Camera off</string>
+    <string name="chip_camera_starting">Camera starting</string>
+    <string name="chip_camera_active">Camera active</string>
+    <string name="chip_camera_denied">Camera denied</string>
+    <string name="chip_camera_error">Camera error</string>
+    <string name="chip_backend_checking">Backend: checking</string>
+    <string name="chip_backend_online">Backend: online</string>
+    <string name="chip_backend_offline">Backend: offline</string>
+    <string name="chip_backend_unknown">Backend: unknown</string>
+    <string name="chip_session_none">No session</string>
+    <string name="chip_session_syncing">Syncing</string>
+    <string name="chip_session_connecting">Connecting session</string>
+    <string name="chip_session_error">Sync failed</string>
+    <string name="chip_demo_mode">Server demo mode</string>
+
+    <!-- Location -->
+    <string name="location_title">Current location</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="location_idle">Tap Locate or start a session to get your GPS position.</string>
+    <string name="location_acquiring">Acquiring location…</string>
+    <string name="location_waiting_signal">Waiting for a GPS signal…</string>
+    <string name="location_permission_denied">Location permission is required to show your position.</string>
+    <string name="location_permission_permanently_denied">Location permission was denied. Enable it in app settings.</string>
+    <string name="location_disabled">Location services (GPS) are turned off.</string>
+    <string name="location_unavailable">Your location is currently unavailable. Move to an open area or try again.</string>
+    <string name="open_location_settings">Turn on location</string>
+    <string name="retry">Retry</string>
+    <string name="demo_location_badge">DEMO LOCATION</string>
+    <string name="approximate_badge">APPROXIMATE</string>
+    <string name="low_accuracy_warning">Low accuracy (± %1$s). Nearby results may be imprecise.</string>
+    <string name="stale_location_warning">Last fix is %1$s old.</string>
+
+    <!-- Places -->
+    <string name="places_title">Nearby places</string>
+    <string name="places_idle">Places near you will appear here once your location is known.</string>
+    <string name="places_loading">Finding real places nearby… the free OpenStreetMap server can take up to 30 s.</string>
+    <string name="places_empty">No places found within %1$d m.</string>
+    <string name="places_simulated_note">Simulated demo data — these places are fictional.</string>
+    <string name="places_disclaimer">Places are found from your GPS position, not from what the camera sees.</string>
+    <string name="category_all">All</string>
+    <string name="category_food">Food</string>
+    <string name="category_cafe">Cafés</string>
+    <string name="category_attractions">Attractions</string>
+    <string name="category_shopping">Shopping</string>
+    <string name="category_transit">Transit</string>
+    <string name="category_health">Health</string>
+    <string name="category_education">Education</string>
+
+    <!-- Settings dialog -->
+    <string name="settings_title">Connection &amp; demo settings</string>
+    <string name="settings_backend_url">Backend URL</string>
+    <string name="settings_backend_help">Emulator: http://10.0.2.2:3000/ · Phone on the same Wi-Fi: http://&lt;computer-IP&gt;:3000/</string>
+    <string name="settings_interval">Location sync interval (seconds)</string>
+    <string name="settings_radius">Nearby search radius (metres)</string>
+    <string name="settings_demo_location">Use demo location (emulator)</string>
+    <string name="settings_demo_location_help">Sends fixed, clearly labelled demo coordinates instead of GPS. For emulator demonstrations only.</string>
+    <string name="settings_test">Test connection</string>
+    <string name="settings_save">Save</string>
+    <string name="settings_cancel">Cancel</string>
+    <string name="settings_invalid_url">Enter a URL starting with http:// or https://</string>
+    <string name="settings_invalid_interval">Enter a value between 2 and 300</string>
+    <string name="settings_invalid_radius">Enter a value between 50 and 5000</string>
+    <string name="settings_testing">Testing…</string>
+
+    <!-- Live view (opt-in camera sharing) -->
+    <string name="live_view_switch">Share live view with dashboard</string>
+    <string name="live_view_off">Off — the camera picture stays on this phone.</string>
+    <string name="live_view_waiting">On — the camera picture streams while a session is running.</string>
+    <string name="live_view_sharing">Sharing live · %1$d fps · %2$d frames sent</string>
+    <string name="live_view_error">Live view problem: %1$s</string>
+    <string name="live_view_badge">SHARING</string>
+</resources>

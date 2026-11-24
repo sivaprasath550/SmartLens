@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DEBUG BUILDS ONLY. Local development servers (emulator host 10.0.2.2 or a
+     computer's LAN IP such as 192.168.x.x) are plain HTTP, and Android cannot
+     whitelist an IP range, so cleartext is permitted in debug builds. Release
+     builds use src/main/res/xml/network_security_config.xml (HTTPS only). -->
+<network-security-config xmlns:tools="http://schemas.android.com/tools">
+    <base-config
+        cleartextTrafficPermitted="true"
+        tools:ignore="InsecureBaseConfiguration">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

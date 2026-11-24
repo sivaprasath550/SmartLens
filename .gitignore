@@ -1,0 +1,30 @@
+# Secrets / local config
+.env
+.env.*
+!.env.example
+mobile/local.properties
+
+# Node
+node_modules/
+web/dist/
+coverage/
+*.log
+
+# Android / Gradle
+mobile/.gradle/
+mobile/build/
+mobile/app/build/
+mobile/.idea/
+mobile/.kotlin/
+*.iml
+*.apk
+*.aab
+captures/
+.externalNativeBuild/
+.cxx/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

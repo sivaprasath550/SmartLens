@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SmartLens" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/sl_primary</item>
+        <item name="colorOnPrimary">@color/sl_primary_ink</item>
+        <item name="colorPrimaryContainer">@color/sl_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/sl_text</item>
+        <item name="colorSecondary">@color/sl_accent</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/sl_accent_container</item>
+        <item name="colorOnSecondaryContainer">@color/sl_text</item>
+        <item name="colorTertiary">@color/sl_demo</item>
+        <item name="colorError">@color/sl_error</item>
+        <item name="colorErrorContainer">@color/sl_error_container</item>
+        <item name="android:colorBackground">@color/sl_bg</item>
+        <item name="colorOnBackground">@color/sl_text</item>
+        <item name="colorSurface">@color/sl_bg_2</item>
+        <item name="colorOnSurface">@color/sl_text</item>
+        <item name="colorSurfaceVariant">@color/sl_surface_2</item>
+        <item name="colorOnSurfaceVariant">@color/sl_text_2</item>
+        <item name="colorSurfaceContainer">@color/sl_surface</item>
+        <item name="colorSurfaceContainerHigh">@color/sl_surface_2</item>
+        <item name="colorOutline">@color/sl_border</item>
+        <item name="colorOutlineVariant">@color/sl_border</item>
+        <item name="android:statusBarColor">@color/sl_bg</item>
+        <item name="android:navigationBarColor">@color/sl_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="materialCardViewStyle">@style/Widget.SmartLens.Card</item>
+    </style>
+
+    <style name="Widget.SmartLens.Card" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">@color/sl_surface</item>
+        <item name="cardCornerRadius">20dp</item>
+        <item name="strokeColor">@color/sl_border</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <style name="TextAppearance.SmartLens.Label" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textColor">@color/sl_muted</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.06</item>
+    </style>
+
+    <style name="TextAppearance.SmartLens.Coordinate" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textColor">@color/sl_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Widget.SmartLens.Chip.Status" parent="Widget.Material3.Chip.Assist">
+        <item name="chipBackgroundColor">@color/sl_surface_2</item>
+        <item name="chipStrokeColor">@color/sl_border</item>
+        <item name="android:textColor">@color/sl_text</item>
+        <item name="chipIconSize">16dp</item>
+        <item name="ensureMinTouchTargetSize">false</item>
+    </style>
+</resources>

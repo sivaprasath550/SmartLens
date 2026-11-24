@@ -1,0 +1,35 @@
+{
+  "name": "smartlens-backend",
+  "version": "1.0.0",
+  "description": "SmartLens backend: sessions, location sync, nearby places and real-time dashboard events",
+  "type": "module",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=20.10"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test --test-concurrency=1 \"tests/**/*.test.js\"",
+    "lint": "eslint ."
+  },
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^5.3.0",
+    "express-rate-limit": "^7.5.1",
+    "helmet": "^8.3.0",
+    "mongoose": "^8.24.7",
+    "socket.io": "^4.8.4",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "eslint": "^9.39.5",
+    "globals": "^15.15.0",
+    "socket.io-client": "^4.8.4",
+    "supertest": "^7.3.1"
+  }
+}
